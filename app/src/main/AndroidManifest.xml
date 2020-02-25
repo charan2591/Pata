@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="e.pata">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ClaimBonus"
+            android:label="@string/title_activity_claim_bonus"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoanActivity"
+            android:label="@string/title_activity_loan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PurposeActivity"
+            android:label="@string/title_activity_purpose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SinginActivity"
+            android:label="@string/title_activity_singin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DashActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanstatusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IdentificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_appid"/>
+
+
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+    </application>
+
+</manifest>
